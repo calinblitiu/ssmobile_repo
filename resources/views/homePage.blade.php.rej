@@ -1,0 +1,9 @@
+diff a/resources/views/homePage.blade.php b/resources/views/homePage.blade.php	(rejected hunks)
+@@ -133,7 +133,6 @@
+               $cur_time = \Carbon\Carbon::now();
+               $start_time = \Carbon\Carbon::parse($event->start_date);
+               $isRunning = "not-running";
+-              $i++;     
+               if($cur_time >= $start_time)
+                 $isRunning = "running";
+ 

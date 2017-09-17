@@ -1,0 +1,3 @@
+<a href="https://www.facebook.com/rSoccerStreams/" class="{{ $isBefore ? 'beforelogin' : 'afterlogin'  }}" target="_blank" data-title="Facebook" style="color: #B3994C;"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+<a href="https://twitter.com/rsoccerstreams" class="{{ $isBefore ? 'beforelogin' : 'afterlogin'  }}" target="_blank" data-title="Twitter" style="color: #B3994C; padding-left: 20px; padding-right: 20px;"><i class="fa fa-twitter"></i></a>
+<a href="https://www.reddit.com/r/soccerstreams" class="{{ $isBefore ? 'beforelogin' : 'afterlogin'  }}" target="_blank" data-title="Reddit" style="color: #B3994C;"><i class="fa fa-reddit"></i></a>

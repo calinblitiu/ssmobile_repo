@@ -1,0 +1,10 @@
+.color, a, a:hover{
+    color: #9c27b0;
+}
+.color-bg, .bg-color-hover:hover{
+    background-color: #9c27b0;
+    color: #fff;
+}
+.border-color{
+    border-color: #9c27b0;
+}

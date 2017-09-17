@@ -1,0 +1,10 @@
+.color, a, a:hover{
+    color: #ff5722;
+}
+.color-bg, .bg-color-hover:hover{
+    background-color: #ff5722;
+    color: #fff;
+}
+.border-color{
+    border-color: #ff5722;
+}

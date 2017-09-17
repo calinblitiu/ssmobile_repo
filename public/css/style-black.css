@@ -1,0 +1,45 @@
+.color, a, a:hover{
+    color: #212121;
+}
+.color-bg, .bg-color-hover:hover{
+    background-color: #212121;
+    color: #fff;
+}
+.border-color{
+    border-color: #212121;
+}
+
+body{
+    background: #000;
+    color: #fff;   
+}
+
+.navbar-nav li a, .date-data, td a, .current-date-time, .color-text,
+.media a, .media a:hover, .media a:focus{
+    color: #fff !important;
+}
+.current-date-time .offset{
+    color: #4d4c4c !important;
+}
+.live-menu .navbar-nav li a:hover, .live-menu .navbar-nav li a:focus{
+    color: #000 !important;
+}
+.main-title{
+    background: #4d4c4c !important;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #000 !important;
+}
+.table-striped > tbody > tr:nth-of-type(2n) {
+    background-color: #111 !important;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border: none;   
+}
+.panel-body{
+    background-color: #666 !important;
+    color:#fff !important;
+}
+.breadcrumb li.active{
+    color: rgba(255,255,255,0.5);
+}

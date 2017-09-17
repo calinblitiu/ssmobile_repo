@@ -1,0 +1,23 @@
+select#offset.form-control {
+  background-color: #B3994C !important;
+  color: #FFF !important;
+}
+
+#footer-links{
+  color:#FFF;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer-links li{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+
