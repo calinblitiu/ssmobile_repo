@@ -41,7 +41,7 @@
 
   {{-- <script src="{{ cdn('js/tinymce/tinymce.min.js')}}"></script> --}}
 
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="{{ secure_asset('js/axios.min.js') }}"></script>
   <script src="{{ cdn('js/autocomplete/dist/jquery.textcomplete.min.js') }}"></script>
   <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
   <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>

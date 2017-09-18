@@ -352,7 +352,7 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css"/>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.9.0/css/themes/default.min.css"/>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.9.0/css/themes/bootstrap.min.css"/>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="{{ secure_asset('js/axios.min.js') }}"></script>
   <script src="{{ secure_asset('js/jquery.countdown.min.js') }}"></script>
   <script>
     $(function ($) {

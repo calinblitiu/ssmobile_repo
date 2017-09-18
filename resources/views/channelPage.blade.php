@@ -3,7 +3,7 @@
 @section('headScripts')
   <link rel="stylesheet" href="{{ secure_asset('css/news.css') }}">
   {{-- <script type="text/javascript" src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=gq4mpo5r0xobgamm8pni3pqatgqnal9yolqelhzcvnzmkv7i"></script> --}}
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="{{ secure_asset('js/axios.min.js') }}"></script>
   <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
   <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
   <script src="{{ cdn('js/tags.js') }}"></script>

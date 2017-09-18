@@ -657,7 +657,7 @@ if(!Auth::guest()){
         </div>
 		<br>
         <div id="twitter">
-          <a class="twitter-timeline" href="https://twitter.com/rsoccerstreams"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" href="https://twitter.com/rsoccerstreams"></a> <script async src="{{asset('js/widgets.js')}}" charset="utf-8"></script>
         </div>
       </div>
     </div><!-- sidebar -->
