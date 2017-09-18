@@ -2162,3 +2162,20 @@ span.likeCounter {
     float: none;
   }
 }
+.editable-container.editable-inline, .control-group {
+  width: 100% !important;
+}
+
+.editable-input {
+  width: 100% !important;
+  display: inline-block !important;
+}
+
+.editableform .form-control {
+  width: 100% !important;
+}
+.editable-buttons{
+  margin-left: 0 !important;
+  float: left;
+  margin: 10px 0 !important;
+}

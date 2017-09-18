@@ -1,14 +1,15 @@
 @extends('master')
 @section('title', $allSchedule['channel']['name'].' channel-')
 @section('headScripts')
-  <link rel="stylesheet" href="{{ secure_asset('css/news.css') }}">
+  <link rel="stylesheet" href="{{ secure_asset('css/news.min.css') }}">
   {{-- <script type="text/javascript" src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=gq4mpo5r0xobgamm8pni3pqatgqnal9yolqelhzcvnzmkv7i"></script> --}}
   <script src="{{ secure_asset('js/axios.min.js') }}"></script>
   <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
   <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
-  <script src="{{ cdn('js/tags.js') }}"></script>
-  <script src="{{ secure_asset('js/custom.js') }}"></script>
-  <script src="{{ cdn('plugins/clipboard.min.js') }}"></script>
+  {{--<script src="{{ cdn('js/tags.js') }}"></script>--}}
+  <script src="{{ secure_asset('js/custom.min.js') }}"></script>
+  {{--<script src="{{ cdn('plugins/clipboard.min.js') }}"></script>--}}
+  <script src="{{ cdn('plugins/clipboard_tags_min.js') }}"></script>
   {{--<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">--}}
   {{--<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>--}}
   <link href="{{secure_asset('css/bootstrap-toggle.min.css')}}" rel="stylesheet">
@@ -35,7 +36,7 @@
       <div class="col-sm-12">
         <div class="col-xs-6">
             <h4 class="tvSchedule_header header_text" >About</h4>
-            <p align="center">{{$channel_description}}</span>
+            <p align="center">{{$channel_description}}</p>
 
         </div>
         <div class="col-xs-6 acquire_rights">
@@ -144,7 +145,7 @@
                 </div>
                 <div class="mobile-view-team-second">
                   @if(  $scheduleArray[$j]['team2_logo'] )
-                    <spqn style="overflow:hidden;width:130px;display:inline-block;text-overflow: ellipsis;">{{  $scheduleArray[$j]['team2_name']}}</span>
+                    <span style="overflow:hidden;width:130px;display:inline-block;text-overflow: ellipsis;">{{  $scheduleArray[$j]['team2_name']}}</span>
                   @else
                     <span style="overflow:hidden;width:130px;display:inline-block;text-overflow: ellipsis;">{{  $scheduleArray[$j]['team2_name']}}</span>
                   @endif

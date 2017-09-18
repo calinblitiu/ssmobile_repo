@@ -16,7 +16,7 @@
   <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,800">
   <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,500,700,600,800">
   <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:400,700">
-  <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/RobotoSlab.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/RobotoSlab.min.css') }}">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" type="text/css" href="{{ secure_asset('fonts/font-awesome/css/font-awesome.min.css') }}">
   {{--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>--}}
@@ -28,9 +28,9 @@
   <!-- Bootstrap core CSS -->
   <link href="{{ secure_asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
   @if(Session::get('NightMode') || Session::get('NightMode') == '1' )
-    <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/soccerstreams_night.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/soccerstreams_night.min.css') }}">
   @else
-    <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/soccerstreams.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/soccerstreams.min.css') }}">
   @endif
   {{-- <link rel="stylesheet" type="text/css" href="{{ cdn('css/soccerstreams_normal.css') }}"> --}}
   <!-- Bootstrap Country and File upload CSS -->
@@ -43,11 +43,11 @@
   <script src="{{ secure_asset('js/bootstrap-formhelpers.min.js') }}"></script>
   <script src="{{ secure_asset('js/fileinput.min.js') }}"></script>
 
-  <script src="{{ secure_asset('js/hammer.js') }}"></script>
-  <script src="{{ secure_asset('js/custom.js') }}"></script>
+  <script src="{{ secure_asset('js/hammer.min.js') }}"></script>
+  <script src="{{ secure_asset('js/custom.min.js') }}"></script>
   <script src="{{ secure_asset('bootstrap/js/bootstrap.min.js') }}"></script>
-  <script src="{{ secure_asset('js/moment.js') }}"></script>
-  <script src="{{ secure_asset('js/moment-timezone.js') }}"></script>
+  <script src="{{ secure_asset('js/moment.min.js') }}"></script>
+  <script src="{{ secure_asset('js/moment-timezone.min.js') }}"></script>
   <script>
     setInterval(function(){
       checkNotificationurl = "{{secure_url('checkNotification')}}"
@@ -104,7 +104,7 @@
       });
     </script>
   @endif
-  <link rel="stylesheet" href="{{ secure_asset('plugins/sweetalert/sweetalert.css') }}">
+  <link rel="stylesheet" href="{{ secure_asset('plugins/sweetalert/sweetalert.min.css') }}">
   <script src="{{ secure_asset('plugins/sweetalert/sweetalert.min.js') }}"></script>
   @yield('headScripts')
   @yield('style')
@@ -651,7 +651,7 @@ if(!Auth::guest()){
   </div>
 </footer>
 
-<script src="{{ secure_asset('js/date.format.js') }}"></script>
+<script src="{{ secure_asset('js/date.format.min.js') }}"></script>
 <!-- <script src="{{ secure_asset('js/date.format.js') }}"></script> -->
 <script type="text/javascript">
 

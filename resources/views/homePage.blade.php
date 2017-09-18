@@ -1,8 +1,9 @@
 @extends('master')
 @section('headScripts')
-	<link rel="stylesheet" type="text/css" href="{{ secure_asset('css/datatables.min.css') }}">
+	{{--<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/v/bs-3.3.7/dt-1.10.13/fc-3.2.2/fh-3.1.2/r-2.1.0/datatables.min.css"/>--}}
   {{--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.13/r-2.1.1/datatables.min.css"/>--}}
   {{--<script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.13/r-2.1.1/datatables.min.js"></script>--}}
+  <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/datatables.min.css') }}">
 	<script type="text/javascript" src="{{secure_asset('js/datatables.min.js')}}"></script>
 	{{--<script src="https://unpkg.com/axios@0.16.2/dist/axios.min.js"></script>--}}
   <script src="{{ asset('js/axios.min.js') }}"></script>

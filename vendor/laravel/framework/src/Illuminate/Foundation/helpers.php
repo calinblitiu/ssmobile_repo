@@ -719,7 +719,7 @@ if (! function_exists('secure_asset')) {
      */
     function secure_asset($path)
     {
-        //return asset($path, false);
+       // return asset($path, false);
         return asset($path, true);
     }
 }

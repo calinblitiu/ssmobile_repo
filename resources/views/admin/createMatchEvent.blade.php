@@ -113,7 +113,7 @@
 @endsection
 
 @section('footerScripts')
-  <script src="{{ secure_asset('js/moment.js') }}"></script>
+  <script src="{{ secure_asset('js/moment.min.js') }}"></script>
   <script src="{{ secure_asset('plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js') }}"></script>
   <link rel="stylesheet" href="{{ secure_asset('plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css') }}">
   <script>

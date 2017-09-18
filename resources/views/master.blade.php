@@ -16,7 +16,7 @@
   <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,800">
   <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,500,700,600,800">
   <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald:400,700">
-  <link rel="stylesheet" type="text/css" href="{{ cdn('css/RobotoSlab.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ cdn('css/RobotoSlab.min.css') }}">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" type="text/css" href="{{ secure_asset('fonts/font-awesome/css/font-awesome.min.css') }}">
   <script src="{{ secure_asset('js/jquery_1.11.3.min.js') }}"></script>
@@ -28,9 +28,9 @@
   <!-- Bootstrap core CSS -->
   <link href="{{ cdn('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
   @if(Session::get('NightMode') || Session::get('NightMode') == '1' )
-    <link rel="stylesheet" type="text/css" href="{{ cdn('css/soccerstreams_night.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ cdn('css/soccerstreams_night.min.css') }}">
   @else
-    <link rel="stylesheet" type="text/css" href="{{ cdn('css/soccerstreams.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ cdn('css/soccerstreams.min.css') }}">
   @endif
   {{-- <link rel="stylesheet" type="text/css" href="{{ cdn('css/soccerstreams_normal.css') }}"> --}}
   <!-- Bootstrap Country and File upload CSS -->
@@ -47,7 +47,7 @@
   <script src="{{ cdn('js/fileinput.min.js') }}"></script>
 
   <script src="{{ cdn('js/hammer.min.js') }}"></script>
-  <script src="{{ cdn('js/custom.js') }}"></script>
+  <script src="{{ cdn('js/custom.min.js') }}"></script>
   <script src="{{ cdn('bootstrap/js/bootstrap.min.js') }}"></script>
   <script src="{{ cdn('js/moment.min.js') }}"></script>
   <script src="{{ cdn('js/moment-timezone.min.js') }}"></script>
@@ -110,7 +110,7 @@
       });
     </script>
   @endif
-  <link rel="stylesheet" href="{{ cdn('plugins/sweetalert/sweetalert.css') }}">
+  <link rel="stylesheet" href="{{ cdn('plugins/sweetalert/sweetalert.min.css') }}">
   <script src="{{ cdn('plugins/sweetalert/sweetalert.min.js') }}"></script>
   @yield('headScripts')
   @yield('style')
@@ -646,7 +646,7 @@ if(!Auth::guest()){
                 </div>
           </div>
         </div>
-        <div class="row" id="social" style="text-align: center; font-size: 200%; margin: 7px 0 0 0; padding: 10px; background-image: url(/images/bg.png); border-radius: 5px;">
+        <div class="row" id="social" style="text-align: center; font-size: 200%; margin: 7px 0 0 0; padding: 10px; background-image: url('{{cdn('images/bg.png')}}'); border-radius: 5px;">
 
           <a href="https://discordapp.com/channels/341369416656617493/341369416656617493" target="_blank" data-title="Discord" style="color: #B3994C; padding-right: 20px;">
             <img alt="discord" src="{{cdn('images/soccer_header_icon.png')}}" style="margin-top: -8px;"></a>
@@ -716,8 +716,8 @@ if(!Auth::guest()){
   </div>
 </footer>
 
-<script src="{{ cdn('js/date.format.js') }}"></script>
-<!-- <script src="{{ cdn('js/date.format.js') }}"></script> -->
+<script src="{{ cdn('js/date.format.min.js') }}"></script>
+
 <script type="text/javascript">
 
   $(document).ready(function () {

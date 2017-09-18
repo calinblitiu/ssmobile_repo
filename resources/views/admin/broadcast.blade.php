@@ -188,7 +188,7 @@
 </div>
 @section('footerScripts')
   <script src="//cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js"></script>
-  <script src="{{ secure_asset('js/jscolor.js') }}"></script>
+  <script src="{{ secure_asset('js/jscolor.min.js') }}"></script>
   
   <!-- CSS -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css"/>

@@ -280,8 +280,10 @@
 
 @endsection
 @section('footerScripts')
-  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/v/bs-3.3.7/dt-1.10.13/fc-3.2.2/fh-3.1.2/r-2.1.0/datatables.min.css"/>
-  <script type="text/javascript" src="//cdn.datatables.net/v/bs-3.3.7/dt-1.10.13/fc-3.2.2/fh-3.1.2/r-2.1.0/datatables.min.js"></script>
+  {{--<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/v/bs-3.3.7/dt-1.10.13/fc-3.2.2/fh-3.1.2/r-2.1.0/datatables.min.css"/>--}}
+  {{--<script type="text/javascript" src="//cdn.datatables.net/v/bs-3.3.7/dt-1.10.13/fc-3.2.2/fh-3.1.2/r-2.1.0/datatables.min.js"></script>--}}
+  <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/datatables.min.css') }}">
+  <script type="text/javascript" src="{{secure_asset('js/datatables.min.js')}}"></script>
   <script src="//cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js"></script>
   
   <!-- CSS -->
@@ -289,7 +291,7 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.9.0/css/themes/default.min.css"/>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.9.0/css/themes/bootstrap.min.css"/>
   
-  <script src="{{ secure_asset('js/jquery.popconfirm.js') }}" type="text/javascript"></script>
+  <script src="{{ secure_asset('js/jquery.popconfirm.min.js') }}" type="text/javascript"></script>
   <script>
     $(function ($) {
       $('.table').DataTable();

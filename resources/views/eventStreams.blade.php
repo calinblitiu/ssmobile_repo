@@ -3,9 +3,10 @@
 @section('content')
   <link rel="stylesheet" href="{{ secure_asset('css/global.css') }}">
   <link href="{{ secure_asset('css/socicon/socicon.css') }}" rel="stylesheet">
-  <link href="{{ secure_asset('css/tags.css') }}" rel="stylesheet">
-  <script src="{{ secure_asset('js/tags.js') }}"></script>
-  <script src="{{ secure_asset('plugins/clipboard.min.js') }}"></script>
+  <link href="{{ secure_asset('css/tags.min.css') }}" rel="stylesheet">
+  {{--<script src="{{ secure_asset('js/tags.js') }}"></script>--}}
+  {{--<script src="{{ secure_asset('plugins/clipboard.min.js') }}"></script>--}}
+  <script src="{{ secure_asset('plugins/clipboard_tags_min.js') }}"></script>
   <style>
     a {
       color: #FFF;

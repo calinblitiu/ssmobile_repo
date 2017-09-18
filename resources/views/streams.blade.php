@@ -18,12 +18,12 @@
 
 @section('headScripts')
     @if(Session::get('NightMode') || Session::get('NightMode') == '1' )
-      <link rel="stylesheet" href="{{ cdn('css/streams_night.css') }}">
+      <link rel="stylesheet" href="{{ cdn('css/streams_night.min.css') }}">
     @else
-      <link rel="stylesheet" href="{{ cdn('css/streams.css') }}">
+      <link rel="stylesheet" href="{{ cdn('css/streams_comment.min.css') }}">
     @endif
-  <link rel="stylesheet" href="{{ cdn('css/editor.css') }}">
-  <link rel="stylesheet" href="{{ cdn('css/comment.css') }}">
+  <link rel="stylesheet" href="{{ cdn('css/editor.min.css') }}">
+  {{--<link rel="stylesheet" href="{{ cdn('css/comment.css') }}">--}}
   <script>
     var emojis = {};
     var GitHubEmojiAPICallback = function(resp) {
@@ -45,14 +45,15 @@
   <script src="{{ cdn('js/autocomplete/dist/jquery.textcomplete.min.js') }}"></script>
   <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
   <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
-  <script src="{{ cdn('js/tags.js') }}"></script>
-  <script src="{{ cdn('js/comment.js') }}"></script>
-  <script src="{{ cdn('plugins/clipboard.min.js') }}"></script>
+  {{--<script src="{{ cdn('js/tags.js') }}"></script>--}}
+  <script src="{{ cdn('js/comment.min.js') }}"></script>
+  {{--<script src="{{ cdn('plugins/clipboard.min.js') }}"></script>--}}
+    <script src="{{ secure_asset('plugins/clipboard_tags_min.js') }}"></script>
     <link href="{{secure_asset('css/bootstrap-toggle.min.css')}}" rel="stylesheet">
     <script src="{{secure_asset('js/bootstrap-toggle.min.js')}}"></script>
   {{--<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">--}}
   {{--<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>--}}
-  <script src="{{secure_asset('js/bootstrap-toggle.min.js')}}"></script>
+
 @endsection
 
 @section('content')
@@ -270,7 +271,7 @@
 
 @section('scripts')
   <script src="{{ cdn('js/jquery.countdown.min.js') }}"></script>
-  <script src="{{ cdn('js/streams.js') }}"></script>
+  <script src="{{ cdn('js/streams.min.js') }}"></script>
   <script src="//cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js"></script>
 
   <!-- CSS -->
@@ -329,7 +330,7 @@
   .color-gold {
     color: #B3994C;
   }
-  .modal{ z-index: 2050 !important};
+  .modal{ z-index: 2050 !important}
 </style>
 <div class="modal fade edit_form" id="edit_form" role="dialog">
     <div class="modal-dialog">

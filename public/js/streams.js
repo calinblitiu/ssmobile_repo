@@ -18,7 +18,7 @@ $(function ($) {
       $('#quality_selector').prop('disabled', false);
       $('#language_selector').prop('disabled', false);
       var rex = new RegExp($(this).val());
-      console.log(rex);
+
       if (rex == "/all/") {
         $('.clickable-row').show();
         clearFilter();
@@ -63,11 +63,10 @@ $(function ($) {
 
 
 function filterText(el) {
-  console.log(el);
-  console.log($(el).val());
+
   
   var rex = new RegExp($(el).val());
-  console.log(rex);
+
   if (rex == "/all/") {
     $('.clickable-row').show();
     clearFilter()
@@ -80,6 +79,6 @@ function filterText(el) {
 }
 
 function clearFilter() {
-  console.log('filter ....');
+
   $('.clickable-row').show();
 }
