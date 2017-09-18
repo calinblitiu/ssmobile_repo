@@ -31,8 +31,10 @@
   <script src="{{ secure_asset('js/comment.js'.'?'.time()) }}"></script>
   <!-- <script src="{{ secure_asset('js/comment.js'.'?'.time()) }}"></script> -->
   <script src="{{ secure_asset('plugins/clipboard.min.js') }}"></script>
-  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  {{--<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">--}}
+  {{--<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>--}}
+  <link href="{{secure_asset('css/bootstrap-toggle.min.css')}}" rel="stylesheet">
+  <script src="{{secure_asset('js/bootstrap-toggle.min.js')}}"></script>
 @endsection
 
 @section('content')

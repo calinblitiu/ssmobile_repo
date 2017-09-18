@@ -10,6 +10,8 @@ use \Auth;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
+
 
 class EventController extends BaseController
 {
@@ -23,7 +25,9 @@ class EventController extends BaseController
     /*$event = new Event;
     $events = $event->getEventsByInterval();*/
     
-    $events = $this->getEventList();
+   $events = $this->getEventList();
+   //Log::info('==========log_info==============');
+   // Log::info($events);
 
     // Sort by popular competitions
     $favourite = new Favourite;

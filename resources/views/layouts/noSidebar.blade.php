@@ -19,7 +19,8 @@
   <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/RobotoSlab.css') }}">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" type="text/css" href="{{ secure_asset('fonts/font-awesome/css/font-awesome.min.css') }}">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  {{--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>--}}
+  <script src="{{ secure_asset('js/jquery_1.11.3.min.js') }}"></script>
   <!-- donation stuff
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <link href="//siolab.pw/donation/css/udb.css?ver=1.60" rel="stylesheet">

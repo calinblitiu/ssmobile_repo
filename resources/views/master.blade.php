@@ -19,7 +19,8 @@
   <link rel="stylesheet" type="text/css" href="{{ cdn('css/RobotoSlab.css') }}">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" type="text/css" href="{{ secure_asset('fonts/font-awesome/css/font-awesome.min.css') }}">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="{{ secure_asset('js/jquery_1.11.3.min.js') }}"></script>
+ {{-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>--}}
   <!-- donation stuff
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <link href="//siolab.pw/donation/css/udb.css?ver=1.60" rel="stylesheet">
@@ -647,7 +648,8 @@ if(!Auth::guest()){
         </div>
         <div class="row" id="social" style="text-align: center; font-size: 200%; margin: 7px 0 0 0; padding: 10px; background-image: url(/images/bg.png); border-radius: 5px;">
 
-          <a href="https://discordapp.com/channels/341369416656617493/341369416656617493" target="_blank" data-title="Discord" style="color: #B3994C; padding-right: 20px;"><img alt="discord" src="//b.thumbs.redditmedia.com/IBisJYlGdCaKXExo4zC_bmonhkrRYcsh1TPLTabQP5w.png" style="margin-top: -8px;"></a>
+          <a href="https://discordapp.com/channels/341369416656617493/341369416656617493" target="_blank" data-title="Discord" style="color: #B3994C; padding-right: 20px;">
+            <img alt="discord" src="{{cdn('images/soccer_header_icon.png')}}" style="margin-top: -8px;"></a>
 
           <a href="https://www.facebook.com/rSoccerStreams/" target="_blank" data-title="Facebook" style="color: #B3994C;"><i class="fa fa-facebook"></i></a>
 
@@ -657,7 +659,7 @@ if(!Auth::guest()){
         </div>
 		<br>
         <div id="twitter">
-          <a class="twitter-timeline" href="https://twitter.com/rsoccerstreams"></a> <script async src="{{asset('js/widgets.js')}}" charset="utf-8"></script>
+          <a class="twitter-timeline" href="https://twitter.com/rsoccerstreams"></a> <script async src="{{secure_url('js/widgets.js')}}" charset="utf-8"></script>
         </div>
       </div>
     </div><!-- sidebar -->

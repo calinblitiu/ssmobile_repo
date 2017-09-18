@@ -26,8 +26,10 @@
   <script src="{{ cdn('js/tags.js') }}"></script>
   <script src="{{ secure_asset('js/custom.js') }}"></script>
   <script src="{{ cdn('plugins/clipboard.min.js') }}"></script>
-  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  {{--<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">--}}
+  {{--<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>--}}
+  <link href="{{secure_asset('css/bootstrap-toggle.min.css')}}" rel="stylesheet">
+  <script src="{{secure_asset('js/bootstrap-toggle.min.js')}}"></script>
 @endsection
 
 @section('content')
@@ -39,7 +41,7 @@
 
     <div class="col-sm-6 "  >
       <h4  style="color:#5423ff;">dagag</h4>
-      <img src='https://demo.mythemeshop.com/socialme/files/2015/03/table-530x250.jpg' style="width:100%"></img>
+      <img src='https://demo.mythemeshop.com/socialme/files/2015/03/table-530x250.jpg' style="width:100%">
     </div>
     <div class="col-sm-3 " >
       <h4  style="color:#5423ff;">right side bar</h4>
