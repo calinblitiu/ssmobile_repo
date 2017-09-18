@@ -1,6 +1,4 @@
-/**
- * Created by iMezied on 18-Mar-17.
- */
+
 
 $(function ($) {
   var copyStream = new Clipboard('.btn-copy');
