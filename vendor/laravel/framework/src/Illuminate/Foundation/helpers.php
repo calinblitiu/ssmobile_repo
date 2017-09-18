@@ -735,7 +735,7 @@ if (! function_exists('secure_url')) {
     function secure_url($path, $parameters = [])
     {
        return url($path, $parameters, true);
-       // return url($path, $parameters, false);
+      //  return url($path, $parameters, false);
     }
 }
 
