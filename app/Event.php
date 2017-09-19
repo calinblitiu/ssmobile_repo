@@ -106,12 +106,15 @@ class Event extends Model
 
         $today = Carbon::now();
         $duration = Carbon::now()->addHours($interval);
+        $validtime = Carbon::now()->addMinutes(-15);
+
+
 
         $domains = Cache::remember('bannedDomains', 10, function () {
             return Domain::all();
         });
 
-        return Cache::remember('allEvents', 3, function () use ($domains, $today, $duration) {
+        return Cache::remember('allEvents', 3, function () use ($domains, $today, $duration,$validtime) {
             return DB::table('events AS e')
                 ->leftJoin('teams AS ht', 'e.home_team_id', '=', 'ht.team_id')
                 ->leftJoin('teams AS at', 'e.away_team_id', '=', 'at.team_id')
@@ -132,7 +135,7 @@ class Event extends Model
                 ->leftJoin('competitions AS c', 'c.competition_id', '=', 'e.competition_id')
                 ->leftJoin('event_details AS ed', 'ed.event_id', '=', 'e.event_id')
                 ->leftJoin('nations AS n', 'n.nation_id', '=', 'c.nation_id')
-                //->where('e.end_date', '>=', $today)
+                ->where('e.end_date', '>=', $validtime)
                 ->where('e.start_date', '<=', $duration)
                 ->where('e.channels', '!=', null)
                 ->where('e.sport_id', 1)

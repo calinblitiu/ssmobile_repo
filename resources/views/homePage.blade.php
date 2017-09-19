@@ -202,7 +202,7 @@
 									if(isset($event->isFav) && $event->isFav == false) $borderTop = "borderTop";
 								?>
 								<tr @if(isset($event->isFav) && $event->isFav == true)
-										class="night-mode-faverate" style=" background-color: rgba(241, 196, 15, 0.3);""
+										class="night-mode-faverate" style=" background-color: rgba(241, 196, 15, 0.3);"
 									@else class="row{{ $rowNo % 2 }}" @endif
 									competition="{{ $event->competition_name }}"
 								>
@@ -293,7 +293,7 @@
 														</div>
 														<div class="mobile-view-team-second">
 															@if( file_exists( 'images/teams/small/'.$event->away_team_logo ) )
-																<spqn style="overflow:hidden;width:130px;display:inline-block;text-overflow: ellipsis;">{{ $event->away_team }}</span>
+																<span style="overflow:hidden;width:130px;display:inline-block;text-overflow: ellipsis;">{{ $event->away_team }}</span>
 															@else
 																<span style="overflow:hidden;width:130px;display:inline-block;text-overflow: ellipsis;">{{ $event->away_team }}</span>
 															@endif

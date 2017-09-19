@@ -26,10 +26,8 @@ class EventController extends BaseController
     $events = $event->getEventsByInterval();*/
     
    $events = $this->getEventList();
-   //Log::info('==========log_info==============');
-   // Log::info($events);
 
-    // Sort by popular competitions
+      // Sort by popular competitions
     $favourite = new Favourite;
     $events = $favourite->sortEventsByPopularity($events);
     $date = '';
@@ -65,7 +63,8 @@ class EventController extends BaseController
               $color = json_decode( $colors );
               $notification->color = "background:".$color->bgcolor.";color:".$color->txtcolor.";border-color:".$color->border_selector;
           }
-      }  
+      }
+
       return view('homePage', ['competitions' => $competitions, 'events' => $events_filtered, 'favourites' => $favourites, 'notifications' => $notifications ]);
     }
   }

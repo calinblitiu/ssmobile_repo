@@ -159,22 +159,19 @@ class BaseController extends Controller
     }
 
     public function getEventList(){
+
         $event = new Event;
         $events = $event->getEventsByInterval2();
+
         $validEvents = [];
 
-        $dateGap = "+15 minutes";
-        // if (isLocalDev()) $dateGap = "+15 day";
 
-        // $dateGap = "+15 day";
 
         foreach ($events as $event) {
-            $newEndDate = date('Y-m-d H:i:s',strtotime($dateGap,strtotime($event->end_date)));
-            if($newEndDate >= Carbon::now()){
-                $validEvents[] = $event;
-            }
-        }
 
-        return $validEvents;
+                $validEvents[] = $event;
+
+        }
+               return $validEvents;
     }
 }

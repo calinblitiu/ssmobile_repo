@@ -1,4 +1,4 @@
-<script>
+
 function recommend(el, stream, eventID, action ) {
     var url = "{{ secure_url('recommend') }}";
     $.ajax({
@@ -136,4 +136,3 @@ function sendMessage( el, userId, e, url )
             alertify.error('Cancel')
         });
 }
-</script>

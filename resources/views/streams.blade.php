@@ -438,7 +438,7 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="{{secure_asset('js/streams_func1.js')}}"></script>
+
 <script type="text/javascript">
 
 
